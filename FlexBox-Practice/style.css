@@ -1,63 +1,64 @@
 
 * {
-    margin : 0;
-    padding : 0;
-    box-sizing : border-box;
-  }
-  .container {
-    background-color : #ccc;
-    padding : 10px;
-    display : flex;
-  /*   flex-direction : row-reverse; */
-    flex-direction :row;
-    justify-content : space-between;
-    justify-content : space-around;
-    justify-content : space-evenly;
-    justify-content : flex-end;
-    justify-content : flex-start;
-    justify-content : center;
-    
-    align-items : flex-start;
-    align-items : flex-end;
-    align-items : stretch;
-    align-items : center;
-    
-    
-  }
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+}
+.container {
+  background-color : #ccc;
+  padding : 10px;
+  height : 1000px;
+  display : flex;
+/*   flex-direction : row-reverse; */
+  flex-direction :row;
+  justify-content : space-between;
+  justify-content : space-around;
+  justify-content : space-evenly;
+  justify-content : flex-end;
+  justify-content : flex-start;
+  justify-content : center;
   
-  .item {
-    font-size : 26px;
-    padding : 20px;
-    margin : 20px;
-    background-color : red;
-    color : #fff;
-    
-  /*   flex-grow : 1; */
-  }
+  align-items : flex-start;
+  align-items : flex-end;
+  align-items : stretch;
+  align-items : center;
+ 
+  flex-wrap:wrap;
+  align-content : flex-start;
+}
+
+.item {
+  font-size : 26px;
+  padding : 20px;
+  margin : 20px;
+  background-color : red;
+  color : #fff;
   
-  .i2 {
-    height : 150px;
-    order : -2;
-  /*   flex-grow : 3; */
-    
-  /*   flex-basis : 300px;
-    flex-shrink : 0; */
-    
-    flex : 0 0 300px;
-  }
+/*   flex-grow : 1; */
+}
+
+.i2 {
+  height : 150px;
+  order : -2;
+/*   flex-grow : 3; */
   
-  .i3 { 
-    order : 1;
-    
-    flex : 1;
-  }
+/*   flex-basis : 300px;
+  flex-shrink : 0; */
   
-  .i4 {
-    align-self : flex-start;
-    align-self : flex-end;
-    align-self : stretch;
-    align-self : center;
-    
-    order : -1;
-    
-  }
+  flex : 0 0 300px;
+}
+
+.i3 { 
+  order : 1;
+  
+  flex : 1;
+}
+
+.i4 {
+  align-self : flex-start;
+  align-self : flex-end;
+  align-self : stretch;
+  align-self : center;
+  order : -1;
+  
+}
