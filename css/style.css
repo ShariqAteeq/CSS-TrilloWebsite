@@ -257,6 +257,48 @@ body {
     .recommend__photo:not(:last-child) {
       margin-right: -1.5rem; }
 
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  position: relative; }
+  .review__text {
+    z-index: 10;
+    position: relative; }
+  .review__user {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem; }
+  .review__photo {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%; }
+  .review__userbox {
+    margin-right: auto;
+    padding: .5rem 1rem; }
+  .review__username {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .review__userdate {
+    font-size: 1rem;
+    color: var(--color-grey-dark-3); }
+  .review__rating {
+    font-size: 2.2rem;
+    color: var(--color-primary);
+    font-weight: 400; }
+  .review::before {
+    content: "\201C";
+    position: absolute;
+    line-height: 1;
+    top: -2.75rem;
+    left: -1rem;
+    font-size: 20rem;
+    font-family: sans-serif;
+    color: var(--color-grey-light-2);
+    z-index: 1; }
+
 .container {
   max-width: 120rem;
   min-height: 50rem;
@@ -289,6 +331,7 @@ body {
 
 .detail {
   display: flex;
+  font-size: 1.4rem;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: 1px solid var(--color-grey-light-2); }
@@ -298,9 +341,10 @@ body {
   flex: 0 0 60%;
   margin-right: 4.5rem;
   padding: 3rem;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
-  font-size: 1.4rem; }
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
 
 .user-review {
-  background-color: blue;
-  flex: 1; }
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
