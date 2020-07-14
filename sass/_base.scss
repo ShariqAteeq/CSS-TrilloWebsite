@@ -20,6 +20,11 @@
 
 }
 
+$bp-largest : 75em; // 1200/16 bp-breakpoint
+$bp-large : 68.5em; // 1100/16
+$bp-medium : 56.25em; // 900/16
+$bp-small : 37.5em;  //600/16
+$bp-smallest : 31.25em; //500/16
 
 
 * {
@@ -37,6 +42,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen and (max-width : $bp-large) {
+        font-size: 50%; // 8/16
+    }
 }
 
 body {
